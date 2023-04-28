@@ -6,6 +6,11 @@
   box-sizing: border-box;
   position: absolute;
   right: 0;
+  background-color: aliceblue;
+  top: 60px;
+  border-radius: 6px;
+  bottom: 0;
+  border: 1px solid var(--ver-light-pink);
 }
 .title-container {
   display: flex;
