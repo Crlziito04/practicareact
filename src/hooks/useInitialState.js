@@ -12,10 +12,20 @@ const useInitialState = () => {
       ...state,
       cart: [...state.cart, payload],
     });
+    console.log("me ejecuto", payload);
   };
+
+  const removeFromCart = (payload) => {
+    setState({
+      ...state,
+      cart: state.cart.filter((items) => items.id !== payload.id),
+    });
+  };
+
   return {
     state,
     addToCart,
+    removeFromCart,
   };
 };
 
